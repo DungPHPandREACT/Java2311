@@ -63,3 +63,20 @@ Kiểu search 1:
 			+Lấy được keyword người dùng nhập trong trong input keyword
 			+Sử dụng hàm filter để lọc các thông tin phù hợp
 			+Gọi lại hàm read và truyền kết quả trả về của hàm filter
+			
++Id sẽ tự động thêm vào khi tạo một object student mới (id không bị trùng với các id đã tồn tại)
+	Lấy id của phần tử ở vị trí cuối cùng + 1
+	nulish operator
++Lưu trữ dữ liệu vào local storage để khi thoát ra vào lại dữ liệu k bị reset
+
++Phân trang (pagination)
+	-Mỗi trang sẽ hiển thị tối đa là 10 dữ liệu
+	-Công thức tính số lượng trang: Math.ceil((count_data/page_size))
+		22 dữ liệu => 3 trang => Math.ceil((22/10)) = Math.ceil(2,2) => 3
+		28 dữ liệu => 3 trang => Math.ceil(2,8) => 3
+		30 dữ liệu => 3 trang => Math.ceil(3) => 3
+		31 dữ liệu => 4 trang
+	-Công thức tính số lượng phần tử mỗi trang
+		sử dụng hàm slice để cắt dữ liệu array.slice(start, end)
+		=> data.slice( (pageCurrent - 1) * PAGE_SIZE, pageCurrent * PAGE_SIZE)
+		

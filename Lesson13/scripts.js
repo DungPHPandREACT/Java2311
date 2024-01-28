@@ -277,3 +277,69 @@ renderListStudents();
 window.deleteStudent = deleteStudent;
 window.updateStudent = updateStudent;
 window.getPage = getPage;
+
+// method GET => lấy dữ liệu từ api
+// fetch('https://65b64081da3a3c16ab006d33.mockapi.io/api/v1/students', {
+// 	method: 'GET',
+// })
+// 	.then((response) => response.json())
+// 	.then((data) => {
+// 		console.log('data: ', data);
+// 	})
+// 	.catch((error) => {
+// 		console.log('error: ', error);
+// 	});
+
+// method POST => gửi dữ liệu lên api
+// fetch('https://65b64081da3a3c16ab006d33.mockapi.io/api/v1/students', {
+// 	method: 'POST',
+// 	headers: {
+// 		Accept: 'application/json, text/plain, */*',
+// 		'Content-Type': 'application/json',
+// 	},
+// 	body: JSON.stringify({
+// 		name: 'Dũng',
+// 		gender: 'nam',
+// 		math_score: 8,
+// 		english_score: 8,
+// 		literature_score: 7,
+// 	}),
+// })
+// 	.then((response) => response.json())
+// 	.then((data) => {
+// 		console.log('data: ', data);
+// 	})
+// 	.catch((error) => {
+// 		console.log('error: ', error);
+// 	});
+
+// method PUT / PATCH => update dữ liệu lên api
+// fetch('https://65b64081da3a3c16ab006d33.mockapi.io/api/v1/students/39', {
+// 	method: 'PUT',
+// 	headers: {
+// 		Accept: 'application/json, text/plain, */*',
+// 		'Content-Type': 'application/json',
+// 	},
+// 	body: JSON.stringify({
+// 		name: 'Tùng',
+// 	}),
+// })
+// 	.then((response) => response.json())
+// 	.then((data) => {
+// 		console.log('data: ', data);
+// 	})
+// 	.catch((error) => {
+// 		console.log('error: ', error);
+// 	});
+
+// method DELETE => xóa dữ liệu trên api
+// fetch('https://65b64081da3a3c16ab006d33.mockapi.io/api/v1/students/37', {
+// 	method: 'DELETE',
+// })
+// 	.then((response) => response.json())
+// 	.then((data) => {
+// 		console.log('data: ', data);
+// 	})
+// 	.catch((error) => {
+// 		console.log('error: ', error);
+// 	});
